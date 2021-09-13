@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Dipper
 //
 //  Created by Raj Tailor on 9/12/21.
@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var enableBlocking = true
+    @State private var enableBlocking = false
     
     var body: some View {
         VStack{
             Text("Call Dipper")
                 .padding()
             
-            Toggle(isOn: $enableBlocking){
+            Toggle(isOn: $enableBlocking) {
                 Text(enableBlocking ? "Enabled" : "Disabled")
-            }.onChange(of: enableBlocking) {
-                self.sendState(state: $0)
+            }.onChange(of: enableBlocking) { value in
+                self.sendState(state: value)
             }
                 .padding()
                 .toggleStyle(SwitchToggleStyle(tint: .navyBlue))
-
         }
     }
     
-    func sendState(state: Bool){
-        if state{
+    func sendState(state: Bool) {
+        if state {
             print("Published ON")
-        }else{
+        }else {
             print("Published OFF")
         }
     }
