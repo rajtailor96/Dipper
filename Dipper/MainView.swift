@@ -7,25 +7,37 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     @State private var enableBlocking = true
     
     var body: some View {
         VStack{
-            Text("Raj Tailor was Here")
+            Text("Call Dipper")
                 .padding()
             
-            Toggle("Enable Blocking", isOn: $enableBlocking)
+            Toggle(isOn: $enableBlocking){
+                Text(enableBlocking ? "Enabled" : "Disabled")
+            }.onChange(of: enableBlocking) {
+                self.sendState(state: $0)
+            }
                 .padding()
                 .toggleStyle(SwitchToggleStyle(tint: .navyBlue))
 
         }
     }
+    
+    func sendState(state: Bool){
+        if state{
+            print("Published ON")
+        }else{
+            print("Published OFF")
+        }
+    }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
 

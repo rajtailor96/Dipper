@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC1E494326EED2AD00B50AE3 /* DipperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E494226EED2AD00B50AE3 /* DipperApp.swift */; };
-		BC1E494526EED2AD00B50AE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E494426EED2AD00B50AE3 /* ContentView.swift */; };
+		BC1E494526EED2AD00B50AE3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E494426EED2AD00B50AE3 /* MainView.swift */; };
 		BC1E494726EED2AE00B50AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1E494626EED2AE00B50AE3 /* Assets.xcassets */; };
 		BC1E494A26EED2AE00B50AE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1E494926EED2AE00B50AE3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		BC1E493F26EED2AD00B50AE3 /* Dipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1E494226EED2AD00B50AE3 /* DipperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DipperApp.swift; sourceTree = "<group>"; };
-		BC1E494426EED2AD00B50AE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC1E494426EED2AD00B50AE3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BC1E494626EED2AE00B50AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC1E494926EED2AE00B50AE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC1E494B26EED2AE00B50AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				BC1E494226EED2AD00B50AE3 /* DipperApp.swift */,
-				BC1E494426EED2AD00B50AE3 /* ContentView.swift */,
+				BC1E494426EED2AD00B50AE3 /* MainView.swift */,
 				BC1E494626EED2AE00B50AE3 /* Assets.xcassets */,
 				BC1E494B26EED2AE00B50AE3 /* Info.plist */,
 				BC1E494826EED2AE00B50AE3 /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC1E494526EED2AD00B50AE3 /* ContentView.swift in Sources */,
+				BC1E494526EED2AD00B50AE3 /* MainView.swift in Sources */,
 				BC1E494326EED2AD00B50AE3 /* DipperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
